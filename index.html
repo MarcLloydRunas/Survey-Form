@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <title>Meme Religion</title>
+</head>
+
+<div id="outside">
+<form id="survey-form" action="/my-handling-form-page" method="post">
+  <h1 id="title" style="margin-left: 3%;">Meme Religion Application</h1>
+  <p id="description" style="margin-left: 3%;"><b>Note:</b> Form is to be completed at least 7 days prior to date</p>
+  
+  <fieldset style="margin: 3%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+    <legend>Personal Details</legend>
+    <div>
+      <label id="name-label" for="name">Name:</label>
+      <input type="text" required id="name" name="user_name" placeholder="Enter name here">   </div>
+    <div>
+      <label for="address-label">Address:</label>
+      <input type="Address" id="address" name="Address" placeholder="Enter address here">   </div>
+    <div>
+      <label id="email-label" for="Email">Email:</label>
+      <input type="email" required id="email" name="user_email" placeholder="Enter email here">   </div>
+    <div>
+      <label id="number-label" for="phone">Phone Number:</label>
+      <input type="number" id="number" name="user_name" placeholder="Enter 11 digit number" min="1" max="10">  </div>
+
+    <div>
+      <label for="Gender">Gender</label>
+      <p>
+        <input type="radio" name="gender" value="male"> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="other"> Other
+      </p>
+    </div>
+
+  </fieldset>
+
+  <fieldset style="margin: 3%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+    <label for="Gender">Check All That Apply</label>
+    <p>
+      <input type="checkbox" name="genre" value="genre"> I enjoy various meme genres<br>
+      <input type="checkbox" name="age" value="age"> I am over 18 years old for me to view explicit memes<br>
+      <input type="checkbox" name="gods" value="gods"> I prey to the meme gods daily for inspiration<br>
+      <input type="checkbox" name="work" value="work"> I will contribute memes daily<br>
+      <input type="checkbox" name="source" value="source"> I have various meme sources<br>
+      <input type="checkbox" name="make" value="make"> I make original memes<br>
+    </p>
+  </fieldset>
+  
+  
+  <fieldset style="margin: 3%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+    <div>
+      <label for="Preference">Meme Preference:</label>
+      <select id="dropdown">
+  <option value="wholesome">Wholesome</option>
+  <option value="dark">Dark Humour</option>
+  <option value="politics">Politics</option>
+  <option value="obscure">Obscurity</option>
+  <option value="niche">Niche</option>
+  <option value="fanbase">Fanbase</option>
+  <option value="nonesense">Nonesensical</option>
+  <option value="education">Education</option>
+  </select>
+
+      <label for="format">Meme Format Preference:</label>
+      <select id="dropdown2">
+  <option value="image">Image</option>
+  <option value="gif">GIF</option>
+  <option value="video">Video</option>  
+  <option value="text">Textual</option>
+  </select>
+    </div>
+  </fieldset>
+
+  <!-- --------------------Text Areas------------------------------ -->
+  
+  <fieldset style="margin: 3%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+    <legend>Essay Section</legend>
+    <div>
+      <label for="msg"></label>
+      <p> In 50 words or more, state your reasons why you want to join our religion</p>
+      <textarea id="msg" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>   </div>
+    <div>
+      <label for="msg">Please upload atleast 3 of your most favorite memes</label><br>
+      <textarea id="msg2" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>   </div>
+    <p>Upload Police Clearance Certificate, Bank Statement and Medical Certifiates here:
+      <button>Attach Files</button></p>
+  </fieldset>
+
+  <div id="submitbutton" style="margin-left: 3%;">
+    <button type="submit" id="submit">Send your application</button>   </div>
+
+</form>
+  </div>
+
+<!-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Form_validation -->
